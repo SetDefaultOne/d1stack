@@ -14,14 +14,7 @@ export default {
             ["chore", "feat", "fix", "refactor", "docs", "revert"],
         ],
         "scope-empty": [2, "never"],
-        "scope-enum": [
-            2,
-            "always",
-            [
-                "global",
-                "source",
-            ],
-        ],
+        "scope-enum": [2, "always", ["global", "source"]],
         "header-trim": [2, "always"],
         "header-case": [2, "always", ["lower-case"]],
         "header-max-length": [2, "always", 72],
@@ -30,6 +23,6 @@ export default {
         "body-max-line-length": [2, "always", 72],
         "footer-leading-blank": [2, "always"],
         "footer-max-line-length": [2, "always", 72],
-        "trailer-exists": [1, "always"]
+        "trailer-exists": [1, "always"],
     },
 };

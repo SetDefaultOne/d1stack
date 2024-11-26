@@ -5,9 +5,12 @@
     "@commitlint/cli": "19.6.0",
     "@commitlint/config-conventional": "19.6.0",
     "@commitlint/types": "19.5.0",
-    "husky": "9.1.7"
+    "husky": "9.1.7",
+    "prettier": "3.4.1"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "prettier --check --cache --no-error-on-unmatched-pattern --ignore-unknown .",
+    "format": "prettier --write --cache --no-error-on-unmatched-pattern --ignore-unknown ."
   }
 }
