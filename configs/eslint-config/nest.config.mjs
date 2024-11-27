@@ -1,6 +1,7 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
+import base from "./base.config.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,23 +11,11 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+    ...base,
     ...compat.config({
-        parser: "@typescript-eslint/parser",
-        plugins: ["@typescript-eslint/eslint-plugin"],
-        extends: [
-            "plugin:@typescript-eslint/recommended",
-            "plugin:prettier/recommended",
-        ],
         env: {
             node: true,
             jest: true,
-        },
-        rules: {
-            "prettier/prettier": "warn",
-            "@typescript-eslint/interface-name-prefix": "off",
-            "@typescript-eslint/explicit-function-return-type": "off",
-            "@typescript-eslint/explicit-module-boundary-types": "off",
-            "@typescript-eslint/no-explicit-any": "off",
         },
     }),
 ];
