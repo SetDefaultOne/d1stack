@@ -40,11 +40,9 @@
     "scripts": {
         "build": "turbo build",
         "dev": "turbo dev",
-        "format": "turbo format",
-        "lint": "turbo lint",
-        "prepare": "husky",
-        "source:format": "syncpack format && prettier --write .",
-        "source:lint": "syncpack lint && prettier --check ."
+        "format": "syncpack format && prettier --write --cache . && turbo format",
+        "lint": "syncpack lint && prettier --check --cache . turbo lint",
+        "prepare": "husky"
     },
     "workspaces": [
         "apps/*",
