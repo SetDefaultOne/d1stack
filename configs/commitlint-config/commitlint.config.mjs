@@ -20,6 +20,7 @@ export default {
             [
                 "global",
                 "source",
+                "configs",
                 "commitlint-config",
                 "prettier-config",
                 "syncpack-config",

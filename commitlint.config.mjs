@@ -1,3 +1,3 @@
-export default {
-    extends: ["@d1stack/commitlint-config"],
-};
+import config from "@d1stack/commitlint-config";
+
+export default config;

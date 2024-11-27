@@ -4,7 +4,7 @@
     "devDependencies": {
         "syncpack": "13.0.0"
     },
-    "homepage": "https://github.com/SetDefaultOne/d1stack/blob/main/configs/syncpack-config/README.md",
+    "homepage": "https://github.com/SetDefaultOne/d1stack/blob/main/configs/syncpack-config#README",
     "main": "syncpack.config.cjs",
     "repository": {
         "type": "git",
