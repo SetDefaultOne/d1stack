@@ -1,6 +1,13 @@
 {
     "name": "@d1stack/source",
-    "version": "0.0.1",
+    "version": "0.1.0",
+    "author": {
+        "name": "Default One",
+        "email": "setdefaultone@gmail.com",
+        "url": "https://setdefault.one"
+    },
+    "$schema": "https://json.schemastore.org/package.json",
+    "bugs": "https://github.com/SetDefaultOne/d1stack/issues",
     "devDependencies": {
         "@commitlint/cli": "19.6.0",
         "@commitlint/config-conventional": "19.6.0",
@@ -10,7 +17,27 @@
         "syncpack": "13.0.0",
         "turbo": "2.3.2"
     },
+    "devEngines": {
+        "runtime": {
+            "name": "node",
+            "onFail": "error"
+        },
+        "packageManager": {
+            "name": "npm",
+            "onFail": "error"
+        }
+    },
+    "engines": {
+        "node": "22.11.0",
+        "npm": "10.9.0"
+    },
+    "homepage": "https://github.com/SetDefaultOne/d1stack#README",
+    "keywords": [
+        "d1stack"
+    ],
+    "license": "UNLICENSED",
     "packageManager": "npm@10.9.0",
+    "repository": "SetDefaultOne/d1stack.git",
     "scripts": {
         "format": "turbo source:format format",
         "lint": "turbo source:lint lint",
