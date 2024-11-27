@@ -25,6 +25,7 @@ export default {
                 "prettier-config",
                 "syncpack-config",
                 "site",
+                "engine",
             ],
         ],
         "header-trim": [2, "always"],
