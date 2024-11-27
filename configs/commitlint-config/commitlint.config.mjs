@@ -24,6 +24,7 @@ export default {
                 "commitlint-config",
                 "prettier-config",
                 "syncpack-config",
+                "eslint-config",
                 "site",
                 "engine",
             ],

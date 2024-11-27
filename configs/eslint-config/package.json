@@ -1,0 +1,23 @@
+{
+    "name": "@d1stack/eslint-config",
+    "version": "0.1.0",
+    "devDependencies": {
+        "@eslint/eslintrc": "3.2.0",
+        "@typescript-eslint/eslint-plugin": "8.16.0",
+        "@typescript-eslint/parser": "8.16.0",
+        "eslint": "9.15.0",
+        "eslint-config-next": "15.0.3",
+        "eslint-config-prettier": "9.1.0",
+        "eslint-plugin-prettier": "5.2.1"
+    },
+    "files": [
+        "next.config.mjs",
+        "nest.config.mjs"
+    ],
+    "homepage": "https://github.com/SetDefaultOne/d1stack/blob/main/configs/eslint-config#README",
+    "repository": {
+        "type": "git",
+        "directory": "configs/eslint-config",
+        "url": "git+https://github.com/SetDefaultOne/d1stack.git"
+    }
+}
