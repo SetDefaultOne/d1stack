@@ -1,2 +1,4 @@
 npm audit && \
-npm audit signatures
+npm audit signatures && \
+npm run format && \
+npm run lint

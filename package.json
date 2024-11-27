@@ -7,11 +7,20 @@
         "@commitlint/types": "19.5.0",
         "husky": "9.1.7",
         "prettier": "3.4.1",
-        "syncpack": "13.0.0"
+        "syncpack": "13.0.0",
+        "turbo": "2.3.2"
     },
+    "packageManager": "npm@10.9.0",
     "scripts": {
-        "format": "syncpack format && prettier --write --cache --no-error-on-unmatched-pattern --ignore-unknown .",
-        "lint": "syncpack lint && prettier --check --cache --no-error-on-unmatched-pattern --ignore-unknown .",
-        "prepare": "husky"
-    }
+        "format": "turbo source:format format",
+        "lint": "turbo source:lint lint",
+        "prepare": "husky",
+        "source:format": "syncpack format && prettier --write --cache --no-error-on-unmatched-pattern --ignore-unknown .",
+        "source:lint": "syncpack lint && prettier --check --cache --no-error-on-unmatched-pattern --ignore-unknown ."
+    },
+    "workspaces": [
+        "apps/*",
+        "libs/*",
+        "configs/*"
+    ]
 }
