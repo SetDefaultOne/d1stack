@@ -25,6 +25,7 @@ export default {
                 "prettier-config",
                 "syncpack-config",
                 "eslint-config",
+                "typescript-config",
                 "site",
                 "engine",
             ],

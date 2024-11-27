@@ -1,0 +1,14 @@
+{
+    "name": "@d1stack/typescript-config",
+    "version": "0.1.0",
+    "files": [
+        "next.tsconfig.json",
+        "nest.tsconfig.json"
+    ],
+    "homepage": "https://github.com/SetDefaultOne/d1stack/blob/main/configs/typescript-config#README",
+    "repository": {
+        "type": "git",
+        "directory": "configs/typescript-config",
+        "url": "git+https://github.com/SetDefaultOne/d1stack.git"
+    }
+}

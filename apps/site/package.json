@@ -8,6 +8,7 @@
     },
     "devDependencies": {
         "@d1stack/eslint-config": "*",
+        "@d1stack/typescript-config": "*",
         "@types/node": "22.10.0",
         "@types/react": "18.3.12",
         "@types/react-dom": "18.3.1",
