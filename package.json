@@ -6,12 +6,10 @@
         "email": "setdefaultone@gmail.com",
         "url": "https://setdefault.one"
     },
-    "$schema": "https://json.schemastore.org/package.json",
     "bugs": "https://github.com/SetDefaultOne/d1stack/issues",
     "devDependencies": {
         "@commitlint/cli": "19.6.0",
-        "@commitlint/config-conventional": "19.6.0",
-        "@commitlint/types": "19.5.0",
+        "@d1stack/commitlint-config": "*",
         "husky": "9.1.7",
         "prettier": "3.4.1",
         "syncpack": "13.0.0",
@@ -42,8 +40,8 @@
         "format": "turbo source:format format",
         "lint": "turbo source:lint lint",
         "prepare": "husky",
-        "source:format": "syncpack format && prettier --write --cache --no-error-on-unmatched-pattern --ignore-unknown .",
-        "source:lint": "syncpack lint && prettier --check --cache --no-error-on-unmatched-pattern --ignore-unknown ."
+        "source:format": "syncpack format && prettier --write .",
+        "source:lint": "syncpack lint && prettier --check ."
     },
     "workspaces": [
         "apps/*",

@@ -20,6 +20,12 @@ const config = {
             label: "the @types/* dependencies must always be dev dependencies",
             isBanned: true,
         },
+        {
+            packages: ["**"],
+            dependencies: ["@d1stack/**"],
+            specifierTypes: ["latest"],
+            label: "the version of local dependencies must always be latest",
+        },
     ],
     source: ["package.json", "**/package.json", "!node_modules/"],
 };
