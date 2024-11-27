@@ -17,7 +17,13 @@ export default {
         "scope-enum": [
             2,
             "always",
-            ["global", "source", "commitlint-config", "prettier-config"],
+            [
+                "global",
+                "source",
+                "commitlint-config",
+                "prettier-config",
+                "syncpack-config",
+            ],
         ],
         "header-trim": [2, "always"],
         "header-case": [2, "always", ["lower-case"]],
