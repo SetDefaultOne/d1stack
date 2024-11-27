@@ -38,8 +38,10 @@
     "packageManager": "npm@10.9.0",
     "repository": "SetDefaultOne/d1stack.git",
     "scripts": {
-        "format": "turbo source:format format",
-        "lint": "turbo source:lint lint",
+        "build": "turbo build",
+        "dev": "turbo dev",
+        "format": "turbo format",
+        "lint": "turbo lint",
         "prepare": "husky",
         "source:format": "syncpack format && prettier --write .",
         "source:lint": "syncpack lint && prettier --check ."

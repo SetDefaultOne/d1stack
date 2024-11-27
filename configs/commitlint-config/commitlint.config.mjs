@@ -24,6 +24,7 @@ export default {
                 "commitlint-config",
                 "prettier-config",
                 "syncpack-config",
+                "site",
             ],
         ],
         "header-trim": [2, "always"],

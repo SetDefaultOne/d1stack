@@ -2,10 +2,22 @@
     "$schema": "https://turborepo.org/schema.json",
     "tasks": {
         "//#source:format": {},
-        "//#source:lint": {},
-        "format": {},
+        "//#source:lint": {
+            "dependsOn": ["//#source:format"]
+        },
+        "format": {
+            "dependsOn": ["//#source:format"]
+        },
         "lint": {
-            "dependsOn": ["format"]
+            "dependsOn": ["//#source:lint", "format"]
+        },
+        "build": {
+            "dependsOn": ["format", "lint"],
+            "outputs": [".next/**", "!.next/cache/**"]
+        },
+        "dev": {
+            "cache": false,
+            "persistent": true
         }
     }
 }
