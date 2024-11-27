@@ -1,0 +1,14 @@
+{
+    "name": "@d1stack/prettier-config",
+    "version": "0.1.0",
+    "devDependencies": {
+        "prettier": "3.4.1"
+    },
+    "homepage": "https://github.com/SetDefaultOne/d1stack/blob/main/configs/prettier-config/README.md",
+    "main": "prettier.config.mjs",
+    "repository": {
+        "type": "git",
+        "directory": "configs/prettier-config",
+        "url": "git+https://github.com/SetDefaultOne/d1stack.git"
+    }
+}

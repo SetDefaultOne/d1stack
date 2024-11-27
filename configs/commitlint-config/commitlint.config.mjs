@@ -14,7 +14,11 @@ export default {
             ["chore", "feat", "fix", "refactor", "docs", "revert"],
         ],
         "scope-empty": [2, "never"],
-        "scope-enum": [2, "always", ["global", "source", "commitlint-config"]],
+        "scope-enum": [
+            2,
+            "always",
+            ["global", "source", "commitlint-config", "prettier-config"],
+        ],
         "header-trim": [2, "always"],
         "header-case": [2, "always", ["lower-case"]],
         "header-max-length": [1, "always", 72],
