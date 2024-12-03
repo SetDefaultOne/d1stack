@@ -8,12 +8,10 @@
     },
     "bugs": "https://github.com/SetDefaultOne/d1stack/issues",
     "devDependencies": {
-        "@commitlint/cli": "19.6.0",
         "@d1stack/commitlint-config": "*",
         "@d1stack/prettier-config": "*",
         "@d1stack/syncpack-config": "*",
         "husky": "9.1.7",
-        "syncpack": "13.0.0",
         "turbo": "2.3.2"
     },
     "devEngines": {

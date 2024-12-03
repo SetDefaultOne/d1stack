@@ -2,6 +2,7 @@
     "name": "@d1stack/commitlint-config",
     "version": "0.1.0",
     "dependencies": {
+        "@commitlint/cli": "19.6.0",
         "@commitlint/config-conventional": "19.6.0"
     },
     "devDependencies": {
