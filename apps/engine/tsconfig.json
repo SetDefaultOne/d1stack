@@ -2,8 +2,6 @@
     "extends": ["@d1stack/typescript-config/nest.tsconfig.json"],
     "compilerOptions": {
         "outDir": "./dist",
-        "baseUrl": "./",
-        "moduleResolution": "Bundler",
-        "module": "ES6"
+        "baseUrl": "./"
     }
 }

@@ -1,0 +1,31 @@
+{
+    "name": "@d1stack/sdk",
+    "version": "0.1.0",
+    "devDependencies": {
+        "@d1stack/typescript-config": "*",
+        "microbundle": "0.15.1",
+        "rimraf": "6.0.1"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/sdk.d.ts",
+            "import": "./dist/sdk.esm.mjs",
+            "require": "./dist/sdk.cjs",
+            "default": "./dist/sdk.esm.mjs"
+        }
+    },
+    "homepage": "https://github.com/SetDefaultOne/d1stack/blob/main/libs/sdk#README",
+    "main": "./dist/sdk.cjs",
+    "module": "./dist/sdk.esm.mjs",
+    "repository": {
+        "type": "git",
+        "directory": "libs/sdk",
+        "url": "git+https://github.com/SetDefaultOne/d1stack.git"
+    },
+    "scripts": {
+        "build": "rimraf dist/ && microbundle --compress=false --entry=./src/sdk.ts --output=dist",
+        "dev": "microbundle watch --compress=false --entry=./src/sdk.ts --output=dist"
+    },
+    "type": "module",
+    "types": "./dist/sdk.d.ts"
+}

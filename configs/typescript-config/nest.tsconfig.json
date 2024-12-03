@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "moduleResolution": "Bundler",
+        "module": "ES6",
+        "target": "ES2021",
         "declaration": true,
         "removeComments": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
-        "target": "ES2021",
         "sourceMap": true,
         "incremental": true,
         "skipLibCheck": true,
