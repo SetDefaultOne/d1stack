@@ -1,0 +1,4 @@
+name: "d1stack"
+
+include:
+    - libs/database/database.compose.yml
