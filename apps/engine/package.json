@@ -60,10 +60,10 @@
         "start": "nest start",
         "start:debug": "nest start --debug --watch",
         "start:prod": "node dist/main",
-        "test": "jest",
-        "test:cov": "jest --coverage",
-        "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-        "test:e2e": "jest --config ./test/jest-e2e.json",
-        "test:watch": "jest --watch"
+        "test:coverage": "jest --coverage --maxWorkers=4 --passWithNoTests",
+        "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand --maxWorkers=4 --passWithNoTests",
+        "test:e2e": "jest --config ./test/jest-e2e.json --maxWorkers=4 --passWithNoTests",
+        "test:unit": "jest --maxWorkers=4 --passWithNoTests",
+        "test:watch": "jest --watch --maxWorkers=4 --passWithNoTests"
     }
 }

@@ -3,15 +3,26 @@
     "tasks": {
         "format": {},
         "lint": {
-            "dependsOn": ["format"]
+            "dependsOn": ["^build", "format"]
         },
         "build": {
             "dependsOn": ["^build", "lint"],
             "outputs": [".next/**", "!.next/cache/**", "dist/**"]
         },
+        "test:coverage": {
+            "dependsOn": ["build"],
+            "outputs": ["coverage/**"]
+        },
+        "test:unit": {
+            "dependsOn": ["build"]
+        },
+        "test:e2e": {
+            "dependsOn": ["build"]
+        },
         "dev": {
             "cache": false,
-            "persistent": true
+            "persistent": true,
+            "dependsOn": ["^dev"]
         }
     }
 }
