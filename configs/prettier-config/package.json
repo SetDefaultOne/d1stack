@@ -2,7 +2,7 @@
     "name": "@d1stack/prettier-config",
     "version": "0.1.0",
     "devDependencies": {
-        "prettier": "3.4.1"
+        "prettier": "3.4.2"
     },
     "homepage": "https://github.com/SetDefaultOne/d1stack/blob/main/configs/prettier-config#README",
     "main": "prettier.config.mjs",
