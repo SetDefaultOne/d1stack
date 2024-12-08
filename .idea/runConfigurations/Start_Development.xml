@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Start Development" type="CompoundRunConfigurationType">
+    <toRun name="docker-compose.yml: Compose Deployment" type="docker-deploy" />
+    <toRun name="database &gt; dev" type="js.build_tools.npm" />
+    <toRun name="engine &gt; dev" type="js.build_tools.npm" />
+    <toRun name="sdk &gt; dev" type="js.build_tools.npm" />
+    <toRun name="site &gt; dev" type="js.build_tools.npm" />
+    <method v="2" />
+  </configuration>
+</component>
