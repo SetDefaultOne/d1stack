@@ -5,6 +5,7 @@
         "@prisma/client": "6.0.1"
     },
     "devDependencies": {
+        "@d1stack/eslint-config": "*",
         "@d1stack/typescript-config": "*",
         "microbundle": "0.15.1",
         "prisma": "6.0.1",
@@ -45,7 +46,8 @@
         "database:migrate": "prisma migrate dev",
         "database:push": "prisma db push",
         "database:studio": "prisma studio",
-        "dev": "npm run database:generate && microbundle watch --compress=false --entry=./src/database.ts --entry=./src/prisma.ts --entry=./src/entities.ts --output=dist"
+        "dev": "npm run database:generate && microbundle watch --compress=false --entry=./src/database.ts --entry=./src/prisma.ts --entry=./src/entities.ts --output=dist",
+        "lint": "eslint \"src/**/*.ts\" --fix"
     },
     "type": "module",
     "types": "./dist/database.d.ts"
