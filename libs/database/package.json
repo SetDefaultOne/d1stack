@@ -2,13 +2,13 @@
     "name": "@d1stack/database",
     "version": "0.1.0",
     "dependencies": {
-        "@prisma/client": "6.0.1"
+        "@prisma/client": "6.1.0"
     },
     "devDependencies": {
         "@d1stack/eslint-config": "*",
         "@d1stack/typescript-config": "*",
         "microbundle": "0.15.1",
-        "prisma": "6.0.1",
+        "prisma": "6.1.0",
         "rimraf": "6.0.1"
     },
     "exports": {
