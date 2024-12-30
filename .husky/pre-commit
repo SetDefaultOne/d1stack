@@ -1,3 +1,4 @@
-syncpack format && \
-prettier --write --cache . && \
-turbo format lint build test:unit test:e2e test:coverage
+npm run format && \
+npm run lint && \
+npm run build && \
+npm run test \

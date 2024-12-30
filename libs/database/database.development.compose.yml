@@ -1,6 +1,29 @@
 name: "database"
 
 services:
+    lib-database:
+        build:
+            context: ../..
+            dockerfile: ./libs/database/Dockerfile
+            target: build
+        volumes:
+            - .:/app/libs/database
+        command: npm run --workspace libs/database dev
+        environment:
+            CHOKIDAR_USEPOLLING: "true"
+        depends_on:
+            lib-database-build:
+                condition: service_completed_successfully
+
+    lib-database-build:
+        build:
+            context: ../..
+            dockerfile: ./libs/database/Dockerfile
+            target: build
+        volumes:
+            - .:/app/libs/database
+        command: npm run --workspace libs/database build
+
     postgres:
         image: postgres:17.2
         ports:
@@ -37,8 +60,6 @@ services:
                 condition: service_healthy
         volumes:
             - pgadmin:/var/lib/pgadmin/
-            - ./scripts/docker.entrypoint.sh:/docker.entrypoint.sh
-        # entrypoint: /docker.entrypoint.sh
         user: root
         healthcheck:
             test: ["CMD", "wget", "-O", "-", "http://localhost:80/misc/ping"]

@@ -1,0 +1,17 @@
+name: "site"
+
+services:
+    site:
+        build:
+            context: ../..
+            dockerfile: ./apps/site/Dockerfile
+            target: build
+        ports:
+            - "3000:3000"
+        volumes:
+            - .:/app/apps/site
+            - ../../libs/sdk/dist:/app/libs/sdk/dist
+        command: npm run --workspace apps/site dev
+        depends_on:
+            lib-sdk-build:
+                condition: service_completed_successfully

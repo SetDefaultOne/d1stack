@@ -4,7 +4,7 @@
     "dependencies": {
         "@d1stack/database": "*",
         "@d1stack/sdk": "*",
-        "next": "15.1.2",
+        "next": "15.1.3",
         "react": "19.0.0",
         "react-dom": "19.0.0"
     },

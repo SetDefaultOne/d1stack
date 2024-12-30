@@ -36,13 +36,12 @@
     "packageManager": "npm@10.9.0",
     "repository": "SetDefaultOne/d1stack.git",
     "scripts": {
-        "build": "docker-compose up -d && turbo build",
-        "dev": "docker-compose up -d && turbo dev",
+        "build": "turbo build",
+        "dev": "turbo dev",
         "format": "syncpack format && prettier --write --cache . && turbo format",
         "lint": "syncpack lint && prettier --check --cache . && turbo lint",
         "prepare": "husky",
-        "test": "turbo test:unit test:e2e test:coverage",
-        "update": "syncpack update"
+        "test": "turbo test:unit test:e2e test:coverage"
     },
     "workspaces": [
         "apps/*",

@@ -1,3 +1,10 @@
+declare const module: {
+    hot: {
+        accept: () => void;
+        dispose: (callback: () => void) => void;
+    };
+};
+
 import { HttpAdapterHost, NestFactory, Reflector } from "@nestjs/core";
 import { AppModule } from "./app.module";
 import appConfig, { AppConfiguration } from "./app.config";
@@ -43,6 +50,11 @@ async function bootstrap() {
     app.useGlobalFilters(new GlobalExceptionsFilter(app.get(HttpAdapterHost)));
 
     await app.listen(config.deployment.port);
+
+    if (module.hot) {
+        module.hot.accept();
+        module.hot.dispose(() => app.close());
+    }
 }
 
 bootstrap();
