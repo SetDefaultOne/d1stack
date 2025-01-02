@@ -1,1 +1,0 @@
-# CommitLint Configuration

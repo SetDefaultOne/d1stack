@@ -1,3 +1,0 @@
-{
-    "extends": ["@d1stack/typescript-config/lib.tsconfig.json"]
-}

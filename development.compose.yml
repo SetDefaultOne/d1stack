@@ -1,7 +1,0 @@
-name: "d1stack"
-
-include:
-    - apps/engine/engine.development.compose.yml
-    - apps/site/site.development.compose.yml
-    - libs/database/database.development.compose.yml
-    - libs/sdk/sdk.development.compose.yml
