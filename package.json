@@ -12,5 +12,12 @@
         "libs/*",
         "packages/*",
         "configs/*"
-    ]
+    ],
+    "devDependencies": {
+        "@d1stack/prettier-config": "*"
+    },
+    "scripts": {
+        "lint": "prettier . --check --cache",
+        "format": "prettier . --write --cache"
+    }
 }

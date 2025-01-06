@@ -1,0 +1,9 @@
+{
+    "name": "@d1stack/prettier-config",
+    "version": "0.1.0",
+    "dependencies": {
+        "prettier": "^3.4.2"
+    },
+    "type": "module",
+    "exports": "./prettier.config.js"
+}

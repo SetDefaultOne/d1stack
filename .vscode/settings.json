@@ -1,7 +1,7 @@
 {
-  "editor.tabSize": 4,
-  "editor.rulers": [80],
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["devcontainers"]
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "cSpell.words": ["devcontainers"]
 }
