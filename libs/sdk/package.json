@@ -1,0 +1,12 @@
+{
+    "name": "@d1stack/sdk",
+    "version": "0.1.0",
+    "devDependencies": {
+        "typescript": "^5.7.2"
+    },
+    "scripts": {
+        "lint": "tsc --noEmit"
+    },
+    "type": "module",
+    "exports": "./src/sdk.ts"
+}
