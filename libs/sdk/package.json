@@ -8,5 +8,6 @@
         "lint": "tsc --noEmit"
     },
     "type": "module",
-    "exports": "./src/sdk.ts"
+    "exports": "./src/sdk.ts",
+    "types": "./src/sdk.ts"
 }
