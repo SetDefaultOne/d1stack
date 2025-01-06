@@ -8,7 +8,7 @@ async function bootstrap() {
     console.log("sdk name", { name });
 
     const app = await NestFactory.create(AppModule);
-    await app.listen(process.env.PORT ?? 3000);
+    await app.listen(process.env.PORT ?? 4200);
 
     if (module.hot) {
         module.hot.accept();

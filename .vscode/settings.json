@@ -3,5 +3,5 @@
     "editor.rulers": [80],
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "cSpell.words": ["devcontainers"]
+    "cSpell.words": ["devcontainers", "turborepo"]
 }

@@ -17,7 +17,9 @@
         "@d1stack/prettier-config": "*"
     },
     "scripts": {
-        "lint": "prettier . --check --cache",
-        "format": "prettier . --write --cache"
+        "format": "prettier . --write --cache && turbo format",
+        "lint": "prettier . --check --cache && turbo lint",
+        "build": "turbo build",
+        "dev": "turbo dev"
     }
 }
